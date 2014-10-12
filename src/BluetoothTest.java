@@ -1,7 +1,6 @@
-/* Wasson An
- * This is the bluetooth testing class
- */
 
+
+import java.io.OutputStream;
 import java.util.ArrayList;
 
 import javax.bluetooth.*;
@@ -11,7 +10,6 @@ import javax.obex.HeaderSet;
 import javax.obex.Operation;
 import javax.obex.ResponseCodes;
 
-import org.omg.CORBA_2_3.portable.OutputStream;
 
 public class BluetoothTest {
 
@@ -23,7 +21,7 @@ public class BluetoothTest {
 
 		BluetoothTest bt= new BluetoothTest();
 		bt.connect();
-		bt.connect2();
+		//bt.connect2();
 	} //main
 
 	//hopefully connect via bluetooth
@@ -105,7 +103,7 @@ public class BluetoothTest {
 
 			byte data[] = "Hello World !!!".getBytes("iso-8859-1");
 
-			java.io.OutputStream os = putOperation.openOutputStream();
+			OutputStream os = putOperation.openOutputStream();
 			os.write(data);
 			os.close();
 

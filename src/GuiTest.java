@@ -1,3 +1,4 @@
+/*
 import java.awt.Color;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -32,3 +33,4 @@ public class GuiTest {
 		frame.setVisible(true);
 	}	
 }
+*/
